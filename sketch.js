@@ -95,11 +95,11 @@ function setup() {
   button3.mouseClicked(drop3);
 
   mute_btn = createImg('mute.png');
-  mute_btn.position(450,20);
+  mute_btn.position(canW-50,20);
   mute_btn.size(50,50);
   mute_btn.mouseClicked(mute);
   
-  rope = new Rope(7,{x:245,y:30});
+  rope = new Rope(7,{x:canW/4,y:30});
   rope2 = new Rope(7,{x:canW/2+100,y:30});
   rope3 = new Rope(7,{x:canW-100,y:canH/3});
   ground = new Ground(canW/2,canH,canW,10);
